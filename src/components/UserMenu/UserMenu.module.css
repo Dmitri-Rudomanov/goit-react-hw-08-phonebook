@@ -1,0 +1,38 @@
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar{
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.name{
+    font-size: 16px;
+    color: #fff;
+}
+.user{
+    font-weight: 500;
+    font-size: 18px;
+    color: #ee8905;
+    margin: 0 5px 0 5px;
+}
+.btn{
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    padding: 5px;
+    font-family: "Roboto";
+    -webkit-appearance: none;
+    outline: 0;
+    border: 0;
+    border-radius: 5%;
+    color: white;
+    background: #ABA194;
+    transition: 0.3s;
+}
+.btn:hover{
+background-color: #e0922c;
+}

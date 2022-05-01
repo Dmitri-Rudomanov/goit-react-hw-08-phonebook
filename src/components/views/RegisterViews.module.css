@@ -1,0 +1,146 @@
+
+
+
+.user {
+    width: 90%;
+    max-width: 340px;
+    margin: 10vh auto;
+}
+
+.title{
+    font-Family: 'Roboto';
+    font-weight: 500;
+    font-size: 48px;
+    text-align: center;
+    background: #13CF8A;
+    background: linear-gradient(to right, #0a704b 0%, #d6943e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.Smallertitle{
+    font-Family: 'Roboto';
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    background: #CF631B;
+    background: linear-gradient(to right, #065f19f5 0%, #fd8f00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 15px;
+}
+.title svg{
+fill: #c2802a;
+}
+
+.form {
+    font-size: 18px;
+    color: #fff;
+    max-width: 400px;
+    margin-top: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate3d(0, 500px, 0);
+    animation: arrive 500ms ease-in-out 0.2s forwards;
+}
+
+.form__no {
+    animation: NO 1s ease-in-out;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+.formWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.form__input {
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-family: "Roboto";
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    transition: 0.3s;
+    background-color: #fdfcfa;
+}
+.form__input :focus-within{
+background-color: rgb(223, 209, 151);
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 20px;
+    margin:15px 0 0 0;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-family: "Roboto";
+    -webkit-appearance: none;
+    outline: 0;
+    border: 0;
+    color: white;
+    background: #ABA194;
+    transition: 0.3s;
+
+}
+.btn:hover {
+    background-color: #997547;
+}
+
+@keyframes NO {
+
+    from,
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+@keyframes arrive {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0
+    }
+
+    50% {
+        background-position: 100% 0
+    }
+
+    100% {
+        background-position: 0 0
+    }
+}

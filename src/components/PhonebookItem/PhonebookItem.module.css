@@ -1,0 +1,37 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    justify-content: space-between;
+    border: 2px solid rgb(247, 162, 4);
+    width: 100%;
+    font-size: 18px;
+    color: rgb(252, 243, 228);
+    background-color:rgb(0, 145, 97) ;
+    border-radius:5% ;
+    padding: 10px;
+}
+.number{
+color: rgb(243, 191, 161);
+}
+.contact:last-child{
+    margin-bottom: 0px;
+}
+.delete{
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    font-family: "Roboto";
+    -webkit-appearance: none;
+    outline: 0;
+    border: 0;
+    border-radius:5%;
+    color: white;
+    background: #ABA194;
+    transition: 0.3s;
+}
+.delete:hover{
+    background-color: #997547;
+}
