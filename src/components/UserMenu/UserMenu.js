@@ -12,7 +12,8 @@ export default function UserMenu() {
     <div className={s.container}>
       <img src={Avatar} alt="" width="32" className={s.avatar} />
       <span className={s.name}>
-        Welcome,<span className={s.user}>{name}</span>
+        <span className={s.welcome}>Welcome,</span>
+        <span className={s.user}>{name}</span>
       </span>
       <button
         type="button"

@@ -144,3 +144,12 @@ background-color: rgb(223, 209, 151);
         background-position: 0 0
     }
 }
+@media (max-width: 500px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .Smallertitle {
+        font-size: 20px;
+    }
+}
