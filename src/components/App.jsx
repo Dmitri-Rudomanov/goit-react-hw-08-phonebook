@@ -6,7 +6,6 @@ import authSelectors from 'redux/auth/auth-selectors';
 import authOperations from 'redux/auth/auth-operations';
 import AppBar from './AppBar';
 import { ToastContainer } from 'react-toastify';
-import { Audio } from 'react-loader-spinner';
 import Loader from './Loader/Loader';
 const HomeView = lazy(() => import('./views/HomeView'));
 const RegisterView = lazy(() => import('./views/RegisterView'));
