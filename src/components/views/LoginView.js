@@ -36,6 +36,7 @@ export default function LoginView() {
             name="email"
             value={email}
             onChange={handleChange}
+            required
             className={s.form__input}
           />
         </label>
@@ -45,6 +46,7 @@ export default function LoginView() {
           <input
             type="password"
             name="password"
+            required
             value={password}
             onChange={handleChange}
             className={s.form__input}

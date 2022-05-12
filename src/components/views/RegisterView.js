@@ -38,6 +38,7 @@ export default function RegisterView() {
             type="text"
             name="name"
             value={name}
+            required
             className={s.form__input}
             onChange={handleChange}
           />
@@ -49,6 +50,7 @@ export default function RegisterView() {
             type="email"
             name="email"
             value={email}
+            required
             onChange={handleChange}
             className={s.form__input}
           />
@@ -60,6 +62,7 @@ export default function RegisterView() {
             type="password"
             name="password"
             value={password}
+            required
             onChange={handleChange}
             className={s.form__input}
           />
