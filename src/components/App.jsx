@@ -20,6 +20,13 @@ export default function App() {
   useEffect(() => {
     dispatch(authOperations.fetchCurrentUser());
   }, [dispatch]);
+
+  function MissingRoute() {
+    if (isLoggedIn) {
+      return <Navigate to="/contacts" />;
+    }
+    return <Navigate to="/login" />;
+  }
   return (
     <Container>
       {isFetchingCurrentUser ? (
@@ -30,6 +37,7 @@ export default function App() {
 
           <Suspense fallback={<Loader />}>
             <Routes>
+              <Route path="*" element={<MissingRoute />} />
               <Route path="/" element={<HomeView />} />
               <Route
                 path="/register"
@@ -40,7 +48,6 @@ export default function App() {
               />
               <Route
                 path="/login"
-                redirectTo="/contacts"
                 restricted
                 element={
                   !isLoggedIn ? <LoginView /> : <Navigate to="/contacts" />
@@ -48,7 +55,6 @@ export default function App() {
               />
               <Route
                 path="/contacts"
-                redirectTo="/login"
                 element={
                   isLoggedIn ? <ContactsView /> : <Navigate to="/login" />
                 }
